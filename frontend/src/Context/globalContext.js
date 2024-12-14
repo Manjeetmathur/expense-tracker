@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 import axios from "axios";
 export const GlobalContext = createContext();
 
-const BASE_URL = "http://localhost:5000/api/";
+const BASE_URL = "https://expense-tracker-backend-c3yt.onrender.com/api/";
 
 export const GlobalContextProvider = ({ children }) => {
   const [income, setIncome] = useState([]);
