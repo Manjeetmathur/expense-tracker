@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://expense-tracker-0iby.onrender.com/",
     credentials: true,
   })
 );
