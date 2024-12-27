@@ -47,14 +47,18 @@ const AppStyled = styled.div`
   height: 100vh;
   background-image: url();
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   main {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
     background: rgba(252, 246, 249, 0.78);
-    border: 3px solid #ffffff;
+    border: 3px solid rgb(17, 16, 16);
     backdrop-filter: blur(4.5px);
     border-radius: 32px;
-    overflow-x: hidden;
-    overflow: auto;
+    /* overflow-x: hidden; */
+    /* overflow: auto; */
     &::-webkit-scrollbar {
       width: 0;
     }

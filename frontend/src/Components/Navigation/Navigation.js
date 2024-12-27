@@ -7,13 +7,13 @@ const NavStyled = styled.div`
   width: 374px;
   height: 100%;
   background: rgba(252, 246, 249, 0.78);
-  border: 3px solid #ffffff;
+  border: 3px solid rgb(7, 6, 6);
   backdrop-filter: blur(4.5px);
   border-radius: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
+  /* justify-content: spac-between; */
+  /* gap: 2rem; */
   .user-icon {
     height: 100px;
     display: flex;
@@ -40,6 +40,19 @@ const NavStyled = styled.div`
     /* flex: 1; */
     display: flex;
     flex-direction: column;
+    height: 200px;
+    @media (max-width: 767px){
+      height: 150px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      .user-icon{
+       img{
+        width: 40px;
+        height: 40px;
+       }
+      }
+    }
+
     li{
       display: grid;
       grid-template-columns: 40px auto;
@@ -100,9 +113,9 @@ const Navigation = ({active,setActive}) => {
        </ul>
        
       </div>
-      <div className="button-nav">
+      {/* <div className="button-nav">
         <li className=""> Sign Out</li>
-      </div>
+      </div> */}
     </NavStyled>
   );
 };

@@ -10,7 +10,6 @@ const DashboardStyled = styled.div`
 
   .stats-con {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
     gap: 2rem;
     .chart-con{
       grid-column: 1/4;
@@ -71,11 +70,18 @@ const DashboardStyled = styled.div`
         }
       }
     }
+    @media (min-width:1031px){
+      grid-template-columns: repeat(5,1fr);
+    }
+
   }
 
 `
 const Dashboard = () => {
-  const { income, expense, getIncome, getExpense, handleExpense, handleIncome, totalBalance, transactionHistory } = useContext(GlobalContext)
+  const { income, expense, getIncome, getExpense,
+     handleExpense, handleIncome, 
+     totalBalance, transactionHistory } 
+     = useContext(GlobalContext)
 
   useEffect(() => {
     getExpense()

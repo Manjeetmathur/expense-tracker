@@ -32,7 +32,7 @@ const Orb = () => {
 
   return (
     <div>
-      <OrbStyled />
+      {/* <OrbStyled /> */}
     </div>
   );
 };
