@@ -30,12 +30,12 @@ function App() {
     }
   };
 
-  
+
   return (
     <AppStyled className="App">
       {orbMemo}
       <MainLayout>
-     
+
         <Navigation active={active} setActive={setActive} />
         <main>{displayData()}</main>
       </MainLayout>
@@ -50,6 +50,7 @@ const AppStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+ 
   main {
     display: flex;
     flex-direction: column;
@@ -57,10 +58,19 @@ const AppStyled = styled.div`
     border: 3px solid rgb(17, 16, 16);
     backdrop-filter: blur(4.5px);
     border-radius: 32px;
-    /* overflow-x: hidden; */
-    /* overflow: auto; */
+    height: 100v;
+    width: 55vh;
+    margin-left: 20px;
+    
+      @media (min-width:1031px){
+        width: 90vw;
+    }
+      @media (min-width:767px){
+        overflow-x: hidden;
+    overflow: auto;
     &::-webkit-scrollbar {
       width: 0;
+    }
     }
   }
 `;

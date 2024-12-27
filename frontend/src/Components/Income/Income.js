@@ -7,7 +7,7 @@ import IncomeItem from "../IncomeItem/IncomeItem";
 
 const IncomeStyled = styled.div`
   display: flex;
-  overflow: auto;
+  /* overflow: auto; */
   .total-income{
     display: flex;
     justify-content: center;

@@ -11,6 +11,7 @@ const DashboardStyled = styled.div`
   .stats-con {
     display: grid;
     gap: 2rem;
+    margin: ;
     .chart-con{
       grid-column: 1/4;
       height: 400px;

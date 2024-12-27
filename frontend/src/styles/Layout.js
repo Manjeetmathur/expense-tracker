@@ -10,7 +10,7 @@ export  const MainLayout = styled.div`
        @media (max-width: 767px){
               display: flex;
               flex-direction: column;
-              width: 450px;
+              width: 400px;
 
        }
 
@@ -19,9 +19,10 @@ export  const MainLayout = styled.div`
 
 export const InnerLayout = styled.div`
        padding: 2rem 1.5rem;
+       /* margin: 2; */
        width: 100%;
        @media (max-width: 767px){
-             
+              
               height: 100%;
        }
 
